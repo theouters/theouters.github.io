@@ -1,0 +1,493 @@
+
+
+*{
+-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+
+
+
+#pixelCounterWrapper{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width:50px;
+    height:50px;
+    overflow: hidden;
+    z-index:20;
+}
+#pixelCounter{
+    position: absolute;
+    width:50px;
+    height:50px;
+    left:0;
+}
+#pixelCounterWrapper2{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width:50px;
+    height:50px;
+    overflow: hidden;
+    z-index:19;
+}
+#pixelCounter2{
+    position: absolute;
+    width:50px;
+    height:50px;
+    /*bottom:0;*/
+    /*left:0;*/
+}
+
+#pixelText{
+    font-size: 11px;
+    z-index: 21;
+    position: fixed;
+    bottom: 50px;
+    right: 140px;
+}
+
+
+body{
+    background-color: black;
+    visibility: hidden;
+}
+header{
+    width: 100%;
+    position: relative;
+}
+section{
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    overflow: visible;
+    overflow-y: hidden;
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+
+.yellowHeart{
+    -o-transition:0.5s;
+    -ms-transition:0.5s;
+    -moz-transition:0.5s;
+    -webkit-transition:0.5s;
+    transition:0.5s;
+}
+.yellowHeart:hover{
+    /* Safari */
+    -webkit-transform: rotate(-20deg);
+    /* Firefox */
+    -moz-transform: rotate(-20deg);
+    /* IE */
+    -ms-transform: rotate(-20deg);
+    /* Opera */
+    -o-transform: rotate(-20deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+    -o-transition:1s;
+    -ms-transition:1s;
+    -moz-transition:1s;
+    -webkit-transition:1s;
+    transition:1s;
+}
+
+/*##############*/
+/* Menu/navigation*/
+/*##############*/
+
+#underline { 
+position: absolute;
+margin-top: 28px;
+margin-left: 0;
+left: 0; 
+height: 2px; 
+background: #444;
+
+}
+
+
+nav{
+    font-size: 18px;
+    z-index: 100;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+    background-color: black;
+}
+
+    nav ul li{
+        display: inline-block;
+        margin: 0 0.9em;
+    }
+
+    nav a {
+        border: none;
+        font-weight: 200;
+        color: #444;
+        text-transform: uppercase;
+        text-decoration: none;
+        -o-transition: none;
+        -ms-transition: none;
+        -moz-transition: none;
+        -webkit-transition: none;
+        transition: none;
+
+    }
+
+    .selected,nav a:hover{
+        /*color: white;*/
+        /*text-decoration: underline;*/
+    }
+    nav a:hover{
+        color: inherit;
+
+    }
+
+    .start{
+        background-color: transparent;
+    }
+
+    .white{
+        background-color: black;
+    }
+
+    .start a, .start .menuDot, .start a:hover{
+        color: white;
+    }
+    .start #underline{
+        background: white;
+    }
+
+    .white a, .white .menuDot, .white a:hover{
+        color: white;
+    }
+
+    .white #underline { 
+        background: white;
+    }
+
+    .yellow a, .yellow .menuDot, .yellow a:hover{
+        color: #f9af08;
+    }
+    .yellow #underline { 
+        background: rgb(244, 170, 0);
+    }
+    #menuLabel{
+        display: none;
+        cursor:pointer
+    }
+
+/*##############*/
+/*  PORTFOLIO   */
+/*##############*/
+
+.likeButtonWrap {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    width: 142px;
+    height: 42px;
+}
+.likeButtonWrapSmaller {
+    margin-top: 40px;
+    padding-bottom: 100px;
+    width: 94px;
+    height: 42px;   
+}
+.likeButtonWrapAboutUs{
+    padding-bottom: 80px;
+}
+
+    .likeButtonWrapSmaller .likeFB{
+        left: 0;
+    }
+    .likeButtonWrapSmaller .likeTwitter{
+        left: 50px;
+    }
+
+.tunesContent{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.tune{
+    margin-bottom: 20px;
+}
+
+.likeButton {
+    position: absolute;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    border: 2px solid #eee;
+    border-radius: 21px;
+    width: 42px;
+    height: 42px;
+
+
+    -webkit-transition: background-position 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.5s ease-in-out;
+    -moz-transition: background-position 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.5s ease-in-out;
+    -o-transition: background-position 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.5s ease-in-out;
+    -ms-transition: background-position 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.5s ease-in-out;
+    transition: background-position 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.likeHeart:hover,.liked {
+    border-color: rgb(244, 170, 0);
+    background-position: center 11px;
+}
+
+.likeFB:hover {
+    border-color: #6ABBE9;
+    background-position: center 9px;
+}
+
+.likeTwitter:hover {
+    border-color: #6ABBE9;
+    background-position: 9px 11px;
+}
+
+.likeButton:hover {
+    /*background-color:  ;
+    */
+overflow: visible;
+
+    -webkit-transition: background-position 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.5s ease-in-out;
+    -moz-transition: background-position 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.5s ease-in-out;
+    -o-transition: background-position 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.5s ease-in-out;
+    -ms-transition: background-position 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.5s ease-in-out;
+    transition: background-position 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.likeButtonText {
+    z-index: 20;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    position: relative;
+    width: 150px;
+    top: 45px;
+    left: 26px;
+    display: inline-block;
+    text-align: left;
+
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.rsContent{
+    padding-top: 10px;
+}
+    .rsContent .centerImage{
+        max-width: 100%;
+        max-height: 100%;
+    }
+.centerImage{
+    display: block;
+    margin: 0 auto !important;
+}
+.imgCont{
+    width: 729px;
+}
+    .imgCont img{
+        margin: 10px;
+    }
+
+
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.content{
+    padding: 0 0;
+}
+
+.projectsContent{
+    height: 930px;
+    padding: 30px 0 !important;
+}
+
+.anythingWindow{
+    overflow-y: hidden !important;
+}
+
+/*##############*/
+/*  BACKGROUNDS */
+/*##############*/
+
+
+
+/*#newsBG1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/gallery/04.jpg') center center no-repeat;
+    background-position: 0;
+     -moz-background-size: cover;
+    background-size: cover;
+}
+#newsBG2{
+    position: absolute;
+    background: url('../img/gallery/02.jpg') center center no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-position: 0;
+    -moz-background-size: auto, cover;
+    background-size: auto, cover;
+}
+#newsBG3{
+    position: absolute;
+    background: url('../img/gallery/06.jpg') center center no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-position: 0;
+    -moz-background-size: auto, cover;
+    background-size: auto, cover;
+}
+#newsBG4{
+    position: absolute;
+    background: url('../img/gallery/08.jpg') center center no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-position: 0;
+    -moz-background-size: auto, cover;
+    background-size: auto, cover;
+}*/
+
+.newsBG{
+    position: absolute;
+    background: center center no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-position: 0;
+    -moz-background-size: auto, cover;
+    background-size: auto, cover;
+}
+
+@media all and (min-device-width: 1024px){
+            /*#newsBG1{
+                background: url('../img/gallery/04.jpg') center center fixed no-repeat;
+                -moz-background-size: cover;
+                background-size: cover;
+            }
+            #newsBG2{
+                background: url('../img/gallery/02.jpg') center center fixed no-repeat;
+                -moz-background-size: cover;
+                background-size:cover;
+            }
+            #newsBG3{
+                background: url('../img/gallery/06.jpg') center center fixed no-repeat;
+                -moz-background-size: cover;
+                background-size:cover;
+            }
+            #newsBG4{
+                background: url('../img/gallery/08.jpg') center center fixed no-repeat;
+                -moz-background-size: cover;
+                background-size:cover;
+            }*/
+
+            .newsBG{
+                background: center center fixed no-repeat;
+                -moz-background-size: cover;
+                background-size:cover;
+            }
+
+}
+
+/* iPhone */
+@media only screen and (max-device-width: 580px){
+/*    #newsBG1{
+        z-index: 10;
+        background: url('../img/gallery/04.jpg') center center;
+    }
+    #newsBG2{
+        z-index: 10;
+        background: url('../img/gallery/02.jpg') center center;
+    }
+    #newsBG3{
+        z-index: 10;
+        background: url('../img/gallery/06.jpg') center center;
+    }
+    #newsBG4{
+        z-index: 10;
+        background: url('../img/gallery/08.jpg') center center;
+    }*/
+
+    .newsBG{
+        z-index: 10;
+        background: center center;
+        -moz-background-size: contain;
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    
+}
+
+@media only screen and (max-device-width : 1024px) {
+    .newsBG{
+        z-index: 10;
+        background: center center;
+        -moz-background-size: contain;
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+}
+
+
+#about, #projects, #hire, #contact{
+    background-color: white;
+}
+
+#lab{
+    background-color: #ffd200;
+}
+
+.underline{ text-decoration: underline;}
+.orange, .orange p{color: #f9af08;}
+.white{color: white;}
+
+.gigs {
+    font-weight: 300;
+    color: #2d2d2d;
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 1em auto;
+    padding: 0 10px;
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.column {
+    padding-right: 10px;
+}
+
+
+
+
+
