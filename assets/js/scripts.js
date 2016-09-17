@@ -44,7 +44,7 @@ $(document).ready(function(){
 
     });
 
-// Add like to server 
+// Add like to server
         $(".likeHeart").click(function(){
             var id = $(this).attr('id');
             if (!$.cookie(id)) {
@@ -508,5 +508,3 @@ $(window).load(function(){
 $(window).load(function(){
     $('body').css('visibility', 'visible');
 });
-
-
