@@ -486,3 +486,17 @@ img{
 .column {
     padding-right: 10px;
 }
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:5%;
+    top:10%;
+    height:90%;
+    width:90%;
+    position:absolute;
+}
