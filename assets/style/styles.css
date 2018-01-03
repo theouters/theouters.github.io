@@ -49,7 +49,7 @@
 
 
 body{
-    background-color: black;
+    background-color: white;
     visibility: hidden;
 }
 header{
@@ -118,7 +118,7 @@ nav{
     margin: 0 auto;
     text-align: center;
     padding: 40px 0;
-    background-color: black;
+    background-color: white;
 }
 
     nav ul li{
@@ -141,7 +141,7 @@ nav{
     }
 
     .selected,nav a:hover{
-        /*color: white;*/
+        color: black;
         /*text-decoration: underline;*/
     }
     nav a:hover{
@@ -154,22 +154,22 @@ nav{
     }
 
     .white{
-        background-color: black;
+        background-color: white;
     }
 
     .start a, .start .menuDot, .start a:hover{
-        color: white;
+        color: black;
     }
     .start #underline{
-        background: white;
+        background: black;
     }
 
     .white a, .white .menuDot, .white a:hover{
-        color: white;
+        color: black;
     }
 
     .white #underline {
-        background: white;
+        background: black;
     }
 
     .yellow a, .yellow .menuDot, .yellow a:hover{
@@ -474,7 +474,7 @@ img{
 
 .gigs {
     font-weight: 300;
-    color: #2d2d2d;
+    color: white;
     text-align: center;
     max-width: 720px;
     margin: 0 auto 1em auto;
