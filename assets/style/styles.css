@@ -505,3 +505,9 @@ img{
 .link {
     text-decoration: none;
 }
+
+@media only screen and (max-device-width : 768px) {
+    #video {
+        max-width: 100%;
+    }
+}
