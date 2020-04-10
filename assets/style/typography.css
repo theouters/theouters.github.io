@@ -349,36 +349,38 @@ a:hover {
 #contact{
     text-align: center;
 }
-    a.contactEmail{
-        display: block;
-        text-align: center;
-        font-size: 40px;
-        text-transform: none;
-        margin: 0 auto;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        display: inline-block;
-        color: #2d2d2d;
-        text-decoration: none;
-        font-weight: 600;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    a.contactEmail:hover{
-        color: rgb(244, 170, 0);
-    }
 
-    a.socialLogo{
-        
-        text-transform: none;
-        margin: 0 auto;
-        color: #2d2d2d;
-        text-decoration: none;
-        font-weight: 600;
-    }
-    a.socialLogo:hover{
-        color: rgb(244, 170, 0);
-    }
+a.contactEmail{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    text-transform: none;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: inline-block;
+    color: #2d2d2d;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a.contactEmail:hover{
+    color: rgb(244, 170, 0);
+}
+
+a.socialLogo{
+    
+    text-transform: none;
+    margin: 0 auto;
+    color: #2d2d2d;
+    text-decoration: none;
+    font-weight: 600;
+}
+a.socialLogo:hover{
+    color: rgb(244, 170, 0);
+}
 
 .address {
     line-height: 1.6em;
@@ -619,7 +621,7 @@ a:hover {
         height: 100px;
     }
     .contactPhone, a.contactEmail, .contactPhone a{
-        font-size: 36px;
+        font-size: 28px;
     }
     .adressWrapper{
         max-width: 400px;
