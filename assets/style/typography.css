@@ -402,14 +402,14 @@ a.socialLogo:hover{
 }
 
 .addressLeft {
-    width: 33%;
+    width: 25%;
     display: block;
     text-align: center;
     float: left;
 }
 
 .addressRight {
-    width: 33%;
+    width: 25%;
     display: block;
     text-align: center;
     float: right;
