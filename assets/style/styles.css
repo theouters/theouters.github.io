@@ -467,7 +467,8 @@ img{
 #about {
     background-image: url('../img/gallery/cure.jpg');
     background-position: center;
-    background-size: 90%;
+    background-size: 95%;
+    background-repeat: no-repeat;
     color: white;
 }
 
