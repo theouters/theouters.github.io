@@ -464,6 +464,17 @@ img{
     background-color: white;
 }
 
+#about {
+    background-image: url('../img/gallery/cure.jpg');
+    background-position: center;
+    color: white;
+}
+
+#about p {
+    color: white;
+
+}
+
 #lab{
     background-color: #ffd200;
 }

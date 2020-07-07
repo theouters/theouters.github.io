@@ -77,14 +77,14 @@ $(document).ready(function(){
     });
 
     var toggleBackground = function(){
-        if(backgroundCount == 6){
-                for(i=1;i<7;i++){
+        if(backgroundCount == 5){
+                for(i=1;i<6;i++){
                     $('#newsBG'+i).animate({opacity: 0}, 800);
                 }
                 $('#newsBG'+backgroundCount).animate({opacity: 1}, 800);
                 backgroundCount = 1;
         }else{
-                for(i=1;i<7;i++){
+                for(i=1;i<6;i++){
                     $('#newsBG'+i).animate({opacity: 0}, 800);
                 }
                 $('#newsBG'+backgroundCount).animate({opacity: 1}, 800);
